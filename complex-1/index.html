@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf8" />
+    <title>GSTC complex-1 example</title>
+    <!-- Removed missing CSS files -->
+  </head>
+  <body>
+    <style>
+      .gstc__chart-timeline-items-row-item {
+        border-radius: 4px;
+      }
+      body.gstc--dark {
+        background: #323743;
+        color: #ffffffbf;
+      }
+      #toolbox,
+      #search {
+        margin: 20px;
+      }
+      .toolbox-row {
+        width: 100%;
+        display: flex;
+        margin: 10px 0;
+      }
+      #toolbox button {
+        border-radius: 3px;
+        padding: 8px;
+        color: #000000de;
+      }
+      .gstc--dark #toolbox button {
+        background-color: #1e2128;
+        border: 1px solid #1e2128;
+        color: #ffffffa8;
+      }
+      #toolbox * {
+        user-select: none;
+      }
+      #toolbox {
+        display: grid;
+        align-items: center;
+      }
+      .toolbox-item {
+        margin-right: 11px;
+        display: flex;
+        align-items: center;
+      }
+      #toolbox label {
+        cursor: pointer;
+        margin: 0px 10px;
+        user-select: none;
+      }
+      /* Force dependency lines to go top to bottom */
+      .gstc__chart-timeline-dependency-lines-dependency-line {
+        stroke: #28a745 !important;
+        stroke-width: 2 !important;
+      }
+
+      /* Override the dependency line positioning with CSS transform */
+      .gstc__chart-timeline-dependency-lines svg {
+        transform: rotate(90deg) !important;
+        transform-origin: center !important;
+      }
+
+     
+    </style>
+    <div id="timeline" style="height:400px;"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
